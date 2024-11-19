@@ -14,7 +14,6 @@ A Python-based interactive tool for managing virtual machines on KVM/QEMU using 
 - [Commands Overview](#commands-overview)
 - [Future Enhancements](#future-enhancements)
 - [Contributing](#contributing)
-- [License](#license)
 
 <br><br>
 
@@ -30,7 +29,7 @@ Managing virtual machines can often be complex, especially when dealing with mul
 - Start a specified virtual machine
 - Stop a running virtual machine (with an option for a graceful shutdown)
 - Display the name of the hypervisor
-- Placeholder functionality for retrieving the IP address of a VM
+- Retrieving the IP address of a VM
 
 <br><br>
 
@@ -89,14 +88,13 @@ sudo apt install -y libvirt-daemon libvirt-clients libvirt-python virt-manager
 2. **1 - List Virtual Machines**: Lists all defined and running VMs.
 3. **2 - Start a Virtual Machine**: Allows you to start a specified VM.
 4. **3 - Stop a Virtual Machine**: Stops a running VM (forcefully or gracefully).
-5. **4 - Get VM IP Address**: Placeholder for future IP retrieval functionality.
+5. **4 - Get VM IP Address**: retrives IP addresses of chosen VM (the VM chosen should be UP AND RUNNING).
 6. **5 - Quit**: Exits the program.
 
 <br><br>
 
 ## Future Enhancements
 
-- Implement the functionality to retrieve the IP address of a VM using `virsh domifaddr` or external tools.
 - Add support for more advanced VM management features, such as snapshots and resource allocation.
 - Improve error handling and input validation for a more robust user experience.
 
@@ -105,20 +103,6 @@ sudo apt install -y libvirt-daemon libvirt-clients libvirt-python virt-manager
 ## Contributing
 
 Contributions are welcome! If you have ideas for improvements or find any bugs, please open an issue or submit a pull request. Make sure to follow the contribution guidelines.
-
-<br><br>
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-<br><br>
-
-## Acknowledgments
-
-- **Libvirt**: For providing a powerful API to manage virtual machines.
-- **KVM/QEMU**: For the robust virtualization infrastructure.
-- The open-source community for continuous support and contributions.
 
 <br><br>
 
